@@ -1,9 +1,20 @@
-import validator from './validator.js';
+import validator from './validator.js'
 
+const validButton = document.getElementById('validButton')
 
-let validButton = document.getElementById('validButton');
+validButton.addEventListener('click', function () {
+  const inputNumber = document.getElementById('number').value
+  if (inputNumber === '') {
+    alert('Ingresa el numero de tu tarjeta de credito')
+  } else {
+    validator.isValid(inputNumber)
+    validator.maskify(inputNumber.toString())
+  }
+})
 
-validButton.addEventListener('click', validator.isValid);
+console.log(validator)
 
+// let validButton = document.getElementById('validButton');
 
-console.log(validator);
+// validButton.addEventListener('click', validator.isValid);
+// || inputNumber < 16

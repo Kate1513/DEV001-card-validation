@@ -12,14 +12,14 @@
         <p class="info1">Nombre: </p>
         <input type="text" class="info1" id="name" required placeholder="Ingrese su nombre..." autofocus oninput="this.value = this.value.replace(/[^a-z-A-Z\s]/,'')">
         <p class="info2">Numero de tarjeta: </p>
-        <input type="text" class="info2" id="number" required placeholder="Ingrese su numero de tarjeta..."maxlength="16" oninput="this.value = this.value.replace(/[^0-9]/,'')"> 
-        <p class="info3" >Vence: </p>        
+        <input type="text" class="info2" id="number" required placeholder="Ingrese su numero de tarjeta..." maxlength="16" oninput="this.value = this.value.replace(/[^0-9]/,'')"> 
+        <p class="info3">Vence: </p>        
         <input type="month" class="info3" id="date" required>
         <p class="info4">CVV</p>
-        <input type="text" class="info4" id="cvv" maxlength="3" minlength="3" placeholder="CVV"required oninput="this.value = this.value.replace(/[^0-9]/,'')">
-        <button id="validButton" class="info4" >validar</button>
+        <input type="text" class="info4" id="cvv" maxlength="3" minlength="3" placeholder="CVV" required oninput="this.value = this.value.replace(/[^0-9]/,'')">
+        <button id="validButton" class="info4">validar</button>
+        <p id="true"></p>   
       </section>
-
     </main>
     <footer></footer>
     <script type="module" src="index.js"></script>
