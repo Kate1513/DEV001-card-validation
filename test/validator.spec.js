@@ -41,4 +41,22 @@ describe('validator', () => {
       expect(validator.maskify('helloworld')).toBe('######orld')
     })
   })
+
+  describe('validator.franchise', () => {
+    it('debería ser una función', () => {
+      expect(typeof validator.franchise).toBe('function')
+    })
+
+    it('Debería retornar "Visa" para "4"', () => {
+      expect(validator.franchise('4')).toBe('Visa')
+    })
+
+    it('Debería retornar "1" para "1"', () => {
+      expect(validator.franchise('53')).toBe('MasterCard')
+    })
+
+    it('Debería retornar "2131" para "JCB"', () => {
+      expect(validator.franchise('2131')).toBe('JCB')
+    })
+  })
 })

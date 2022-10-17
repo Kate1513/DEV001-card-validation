@@ -2,23 +2,37 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Pasarela de pagos</title>
+    <title>Card Validation</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani">
   </head>
   <body>
-    <header>Card Validation</header>
-    <main class="container">
-      <section class="rectangle">
+    <header>
+      <h1>Superstore Cloud 9</h1>
+      <h2>Método de pago</h2>
+    </header>
+    <section class="process">
+      <img  src="images/Icon1.png" class="buy" alt="Seleccion de producto">
+      <img  src="images/Icon2.png" class="buy" alt="Datos de envio">
+      <img  src="images/Icon3.png" class="buy1" alt="Metodo de pago">
+      <img  src="images/Icon4.png" class="buy1" alt="Envio confirmado">
+    </section>
+    <main class="container">      
+      <section class="information">
         <p class="info1">Nombre: </p>
         <input type="text" class="info1" id="name" required placeholder="Ingrese su nombre..." autofocus oninput="this.value = this.value.replace(/[^a-z-A-Z\s]/,'')">
         <p class="info2">Numero de tarjeta: </p>
-        <input type="text" class="info2" id="number" required placeholder="Ingrese su numero de tarjeta..." maxlength="16" oninput="this.value = this.value.replace(/[^0-9]/,'')"> 
+        <input type="text" class="info2" id="number" required placeholder="Ingrese numero de tarjeta..." maxlength="16" oninput="this.value = this.value.replace(/[^0-9]/,'')"> 
         <p class="info3">Vence: </p>        
         <input type="month" class="info3" id="date" required>
         <p class="info4">CVV</p>
-        <input type="text" class="info4" id="cvv" maxlength="3" minlength="3" placeholder="CVV" required oninput="this.value = this.value.replace(/[^0-9]/,'')">
-        <button id="validButton" class="info4">validar</button>
-        <p id="true"></p>   
+        <input type="text" class="info4" id="cvv" maxlength="3" minlength="3" placeholder="CVV"  required oninput="this.value = this.value.replace(/[^0-9]/,'')">
+        <button id="validButton">Procesar</button>  
+      </section>
+      <section class="cardImage">
+        <img src="images/credit-card.svg" class="imgCard" alt="Tarjeta de credito">
+        <p id="validCard"></p>   
+        <img src="" id="franchise">
       </section>
     </main>
     <footer></footer>

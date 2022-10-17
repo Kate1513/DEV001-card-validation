@@ -2,36 +2,127 @@
     box-sizing: 0;
     margin: 0;
     padding: 0;
+    font-family: Rajdhani, Helvetica,Helvetica,Arial,sans-serif;
 }
-html, body {
+html {
     height: 100%;
     width: 100%;
-    background-color: #F2F2F2;
+    background-color: #586994;
 }
 
-header, .container{
+body{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.rectangle {
-    display: inline-block;
-    width: 12rem;
-    height: 13rem;    
-    margin: 40px auto 0 auto;
-    background: #FFFFFF;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    flex-direction: column;
+    width: 95%;
+    height: 90%;
+    margin: 2% auto;
+    background-color: #f2f2f2;
     border-radius: 12px;
 }
 
-.info1, .info2, .info3, .info4, p{
+header{
     display: flex;
-    justify-content: center;
-    margin: 10px auto 0 auto;
+    align-items: center;
+    flex-direction: column;
+    margin: 1%;
 }
 
+h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 15px;
+}
+
+.process{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: gray;
+}
+
+.buy{
+    background: #9fbaff;
+    border-radius: 5px;
+    width: 5%;
+}
+
+.buy1{
+    width: 5%;
+    border-radius: 5px;
+    background: #FFFFFF;
+}
+
+.container, .cardImage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+.information {
+    width: 12rem;
+    height: 12.5rem;  
+    font-size: 10px;  
+    /* margin: 20% auto; */
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+} 
+
+p {
+    font-weight: bold;
+}
+
+.info1, .info2, .info3, .info4{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3%;  
+    font-size: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 90%;
+}
+
+#name:focus{
+    border-bottom:1px solid #2dbc1a; 
+    outline:none;
+}
+
+#number:focus{
+    border-bottom:1px solid #2dbc1a; 
+    outline:none;
+}
+
+.imgCard{
+    width: 100%;
+    height: 50%;
+}
+
+#cvv{
+    width: 15%;
+    text-align: center;
+}
+
+#cvv:focus{border-bottom:1px solid #2dbc1a; outline:none;}
+
 #validButton{
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+
+#validCard{
+    position: absolute;
+    top: 55%;
+    font-size: 12px;
+}
+
+#franchise{
+    position: absolute;
+    top: 40%;
+    width: 5%;
+    right: 20%;
+    filter: contrast(50);
 }
